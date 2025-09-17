@@ -27,8 +27,8 @@ def generate_launch_description():
         output='screen'
     )
 
-    ros_serail2wifi =  launch_ros.actions.Node(
-        package='ros_serail2wifi',
+    ros_serial2wifi =  launch_ros.actions.Node(
+        package='ros_serial2wifi',
         executable='tcp_server',
         parameters=[{'serial_port': '/tmp/tty_laser'}],
         output='screen'
